@@ -1,6 +1,6 @@
 {
   "name": "generateQueries",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "publicsonar generateQueries test task",
   "main": "query.js",
   "scripts": {
