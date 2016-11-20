@@ -37,9 +37,9 @@ function generateQueries(keywords, maxCharLength, delimiter){
 			query = '';
 		} else {
 			query = keywords
-						.splice(index,1)
-						.concat(query)
-						.join(delimiter);
+					.splice(index,1)
+					.concat(query)
+					.join(delimiter);
 		}
 		
 	}
