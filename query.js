@@ -1,8 +1,17 @@
 'use strict';
 
+/**
+ * @function generateQueries
+ * @description form array of queries with limited length
+ * @param {Array} keywords : array of keywords to form into compact queries
+ * @param {Number} maxCharLength : maximum query length
+ * @param {String} delimiter : query keywords delimiter
+ */
+
 function generateQueries(keywords, maxCharLength, delimiter){
 	let queries = [];
 	let query = '';
+	// avoid to modify source keywords array
 	keywords = keywords.slice();
 	keywords.sort((k1, k2) => k1.length < k2.length ? 1 : k1.length > k2.length ? -1 : 0)
 	while(keywords.length && keywords[0].length > maxCharLength) keywords.shift();
